@@ -47,8 +47,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .q-select {
 	flex: 0 0 200px;
+}
+.platform-ios {
+	.q-select {
+		flex: 0 0 120px;
+	}
 }
 </style>

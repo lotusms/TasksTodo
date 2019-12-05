@@ -6,7 +6,6 @@
 		v-select-all
 		label="Search"
 		class="col"
-		autofocus
 		@keyup.esc="searchField = ''"
 	>
 		<template v-slot:append>

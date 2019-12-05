@@ -16,6 +16,7 @@
 				stack-label
 				dense
 				class="col"
+				type="email"
 				lazy-rules
 				:rules="[ val => isValidEmailAddress(val) || 'Please enter a valid email address']"
 			/>

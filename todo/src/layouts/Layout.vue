@@ -2,7 +2,7 @@
 	<q-layout view="hHh lpR fFf">
 		<q-header elevated>
 			<q-toolbar>
-				<q-toolbar-title class="absolute-center">Tasks Todo</q-toolbar-title>
+				<q-toolbar-title class="absolute-center">TasksTodo</q-toolbar-title>
 				<q-btn
 					to="/auth"
 					flat
@@ -31,6 +31,7 @@
 			v-model="leftDrawerOpen"
 			:breakpoint="767"
 			:width="250"
+			v-if="$q.platform.is.desktop || $q.platform.is.ipad"
 			content-class="bg-secondary shadow-9"
 		>
 			<q-list>
@@ -138,5 +139,16 @@ export default {
 		#9d50bb
 	); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #6e48aa, #9d50bb);
+}
+
+.platform-ios {
+	.q-header {
+		padding-top: constant(safe-area-inset-top);
+		padding-top: env(safe-area-inset-top);
+	}
+	.q-footer {
+		padding-bottom: constant(safe-area-inset-bottom);
+		padding-bottom: env(safe-area-inset-bottom);
+	}
 }
 </style>

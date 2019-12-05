@@ -8,7 +8,7 @@
 			@clear="$emit('update:name', '')"
 			label="Task Name"
 			class="col"
-			autofocus
+			v-autofocus="{delayCordova: 700}"
 			v-select-all
 			clearable
 			clear-icon="close"
@@ -19,12 +19,14 @@
 
 <script>
 import { selectAll } from "../../../directives/directive-select-all";
+import { autofocus } from "../../../directives/directive-autofocus";
 
 export default {
 	name: "ModalTaskName",
 	props: ["name"],
 	directives: {
-		selectAll
+		selectAll,
+		autofocus
 	}
 };
 </script>

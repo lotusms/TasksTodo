@@ -13,6 +13,7 @@
 				</div>
 				<div class="row q-mb-lg">
 					<search />
+					<q-space />
 					<sort />
 				</div>
 
@@ -83,6 +84,9 @@ export default {
 .q-scroll-area-tasks {
 	display: flex;
 	flex-grow: 1;
+	.mobile & {
+		flex-basis: 100px;
+	}
 }
 .electron {
 	.q-scroll-area-tasks {
