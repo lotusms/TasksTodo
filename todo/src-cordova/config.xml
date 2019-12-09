@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.cordova.quasar.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="org.cordova.quasar.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TasksTodo</name>
     <description>A quasar todo app</description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
@@ -18,6 +18,21 @@
     <preference name="KeyboardDisplayRequiresUserAction" value="false" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <icon density="ldpi" src="../images/icon-36-ldpi.png" />
+        <icon density="mdpi" src="../images/icon-48-mdpi.png" />
+        <icon density="hdpi" src="../images/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="../images/icon-96-xhdpi.png" />
+        <splash density="land-hdpi" src="../images/splash.9.png" />
+        <splash density="land-ldpi" src="../images/splash.9.png" />
+        <splash density="land-mdpi" src="../images/splash.9.png" />
+        <splash density="land-xhdpi" src="../images/splash.9.png" />
+        <splash density="port-hdpi" src="../images/splash.9.png" />
+        <splash density="port-ldpi" src="../images/splash.9.png" />
+        <splash density="port-mdpi" src="../images/splash.9.png" />
+        <splash density="port-xhdpi" src="../images/splash.9.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

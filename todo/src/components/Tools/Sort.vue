@@ -56,4 +56,9 @@ export default {
 		flex: 0 0 120px;
 	}
 }
+.platform-android {
+	.q-select {
+		flex: 0 0 120px;
+	}
+}
 </style>

@@ -87,6 +87,9 @@ export default {
 	.mobile & {
 		flex-basis: 100px;
 	}
+	.scroll {
+		height: auto !important;
+	}
 }
 .electron {
 	.q-scroll-area-tasks {
